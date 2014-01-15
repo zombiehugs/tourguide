@@ -1,0 +1,128 @@
+/*CSS Document*/
+#tourBox
+{
+	position: fixed;
+	width: 371px;
+	color: #444444;
+	z-index: 9000;
+	display: block;
+	z-index: 9998;
+	border-radius: 5px;
+	/*[disabled]height:400px;*/
+}
+#tourBox #tourBtn
+{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 17px;
+	background: #50A1C7;
+	width: 100px;
+	height: 27px;
+	margin: -2px auto -4px;
+	padding-top: 12px;
+	padding-bottom: 6px;
+	position: static;
+	z-index: 9997;
+	box-shadow: 1px 2px 3px #9D9D9D;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#tourContent
+{
+	-moz-box-shadow: 2px 5px 12px #888;
+	-webkit-box-shadow: 2px 5px 12px #888;
+	box-shadow: 2px 3px 5px #888;
+	border: thin solid #A5A5A5;
+	height: 165px;
+	background: #EAEAEA;
+	z-index: 9999;
+	position: relative;
+	border-radius: 5px;
+}
+#stepContent
+{
+	/*[disabled]-moz-box-shadow:2px 5px 12px #888;*/
+	/*[disabled]-webkit-box-shadow:2px 5px 12px #888;*/
+	/*[disabled]box-shadow:2px 5px 12px #888;*/
+	padding-right: 8px;
+	padding-left: 15px;
+}
+#tourBox .dictateBtn
+{
+	float: left;
+	margin-top: 12px;
+	margin-left: 16px;
+	cursor: pointer;
+}
+#stepTitle
+{
+	font-size: 20px;
+	padding-top: 12px;
+	font-weight: bold;
+	color: #4F4F4F;
+	float: left;
+	clear: left;
+}
+#stepInstruction
+{
+	height: 75px;
+	line-height: 22px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #4F4F4F;
+	overflow: auto;
+	float: left;
+	clear: left;
+}
+#tourControls
+{
+	height: 40px;
+	/*[disabled]padding:2px;*/
+	z-index: 9997;
+	background: #DBDBDB;
+	float: left;
+	width: 100%;
+	clear: left;
+}
+#itemContainer
+{
+	/*[disabled]width:145px;*/
+	/*[disabled]margin:0 auto;*/
+	/*[disabled]text-align:center;*/
+	/*[disabled]vertical-align:middle;*/
+}
+.controlItem
+{
+	/*[disabled]margin-left:4px;*/
+	/*[disabled]margin-right:4px;*/
+	margin-top: 8px;
+	/*[disabled]width:24px;*/
+	float: left;
+	/*[disabled]vertical-align:middle;*/
+	text-align: center;
+	display: inline;
+	cursor: pointer;
+	width: 25%;
+}
+#controlClose
+{
+	float: right;
+	background-color: #25A0DA;
+	margin-top: 4px;
+	width: 17px;
+	cursor: pointer;
+	margin-right: 4px;
+	border: 1px solid #FFF;
+}
+#highlightOverlay
+{
+	position: absolute;
+	display: none;
+	background-color: #25A0DA;
+	-moz-box-shadow: 0px 0px 25px #25a0da;
+	-webkit-box-shadow: 0px 0px 25px #25a0da;
+	box-shadow: 0px 0px 25px #25A0DA;
+	opacity: .4;
+	z-index: 8999;
+}

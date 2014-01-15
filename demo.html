@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tour Guide Demo</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>   
+    <link rel="Stylesheet" type="text/css" href="css/tourguide.css" />
+</head>
+<body>
+
+</body>
+    <script type="text/javascript" src="js/jquery.class.js"></script> 
+    <script type="text/javascript" src="js/tourguide.js"></script>
+    <script type="text/javascript" src="js/tourguidehelper.js"></script>
+    <script type="text/javascript" src="js/speakGenerator.js"></script>
+    <script type="text/javascript" src="js/speakClient.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var pageInstructions = new Array(2);
+            pageInstructions[0] = ['#usersListBox', 'STEP 1 - Drawers', 'These pop out drawers contain your users and your courses.', 3000];
+            pageInstructions[1] = ['#selectedUsers', 'STEP 2 - Add Users', 'You will need to add users to assign courses.', 5000];
+            pageInstructions[2] = ['#selectedCourses', 'STEP 3 - Add Courses', 'You will need to add courses to assign to users.', 1000];
+            pageInstructions[3] = ['#courseListBox', 'STEP 4 - Drawers', 'These pop out drawers contain your users and your courses.', 1000];
+            //Initialize New Tour with Instructions
+            var tourguide = new TourGuide('top', 'Show me', pageInstructions);
+        });
+    </script>
+</html>
